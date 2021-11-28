@@ -8,12 +8,16 @@ Welcome to the LittleBill Frontend Technical Test for Interns. In this test, you
 
 This application is an amazing Marvel characters Search! The user is allowed to enter a text on the search box and hit enter. This will trigger a request to Marvel's open API and return a list of characters based on the start of their name. But now we need to display those characters on the page as a list!
 
-You will need to create the necessary code in order to render that list of characters on the page. To do so, please take a look at the Search component located [here](./src/components/Search).
+You will need to create the necessary code in order to render that list of characters on the page:
+
+- When the user searches for a superhero, by typing on the Search field, and hits enter, a list of 4 results will be displayed.
+- Upon clicking on a specific result, the user is redirected to a detail page of that character
+
+To do so, please take a look at the Search component located [here](./src/components/Search).
+
+**Optionally**, you can add at the bottom of the page, if there are more results, a pagination system will be displayed, that will allow the user to see more results
 
 You will need an API key in order to execute these requests. Please use the following one: `32d3a77664a5f27ffaa0f8d43df8c888`
- 
-NB: In order to use this API key, you have to edit your `/etc/hosts` file, adding this line `127.0.0.1   develop.littlebill.com`.
-
 
 You will notice that the component receives as a parameter something called `characters`. This is a list of characters associated with the current search query. You will need to iterate through that list and render those characters on the page!
 
@@ -32,4 +36,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-In order to use this project locally, you have to edit your `/etc/hosts` file, adding this line `127.0.0.1   develop.littlebill.com`.
+In order to use this project locally, you have to edit your `/etc/hosts` file, adding this line `127.0.0.1 develop.littlebill.com`.
